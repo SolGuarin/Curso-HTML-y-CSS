@@ -1,0 +1,299 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+}
+.phone{
+    position: relative;
+    border: 8px solid black;
+    border-radius: 40px;
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30),
+                0 15px 12px rgb(0, 0, 0, 0.22);
+    height: 600px;
+    width: 300px;
+    background-color: #CCEFFF;
+}
+.title{
+    padding-top: 10%;
+    top: 50px;
+    text-align: center;
+    font-family: cursive, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    color: #239B89;
+}
+.total-count{
+    text-align: center;
+    font-family: cursive;
+    padding-top: 10px;
+    color: #239B89;
+}
+.layer-1{
+    position: absolute;
+    z-index: 1;
+    height: 450px;
+    width: 80px;
+    bottom: 0;
+    right: 50px;
+
+    animation-name: skip;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes skip {
+    0%{
+        bottom: 0;
+    }
+    25%{
+        bottom: -80px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+
+.checkbox{
+    appearance: none;
+    cursor: pointer;
+    margin: 0;
+    position: relative;
+    top: 0;
+    z-index: 2;
+    width: 80px;
+    height: 50px;
+}
+.layer-2{
+    position: absolute;
+    z-index: 2;
+    height: 450px;
+    width: 80px;
+    bottom: 0;
+    left: 50px;
+    animation-name: skip;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes skip {
+    0%{
+        bottom: 0;
+    }
+    50%{
+        bottom: -100px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+.layer-3{
+    position: absolute;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 220px;
+    height: 400px;
+    background-color: #d3bcf6;
+    bottom: 0;
+}
+.layer-4{
+    position: absolute;
+    z-index: 4;
+    height: 350px;
+    width: 80px;
+    bottom: 0;
+    left: 20px;
+
+    animation-name: skip;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes skip {
+    0%{
+        bottom: 0;
+    }
+    25%{
+        bottom: -80px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+.layer-5{
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    margin: 0 auto;
+    height: 300px;
+    width: 220px;
+    background-color: papayawhip;
+    bottom: 0;
+}
+.layer-6{
+    position: absolute;
+    z-index: 6;
+    height: 250px;
+    width: 80px;
+    bottom: 0;
+    right: 25px;
+
+    animation-name: skip;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+@keyframes skip {
+    0%{
+        bottom: 0;
+    }
+    25%{
+        bottom: -80px;
+    }
+    100%{
+        bottom: 0;
+    }
+}
+.layer-7{
+    position: absolute;
+    z-index: 7;
+    height: 200px;
+    width: 150px;
+    right: 0;
+    bottom: 0;
+    background-color: pink;
+}
+.layer-8{
+    position: absolute;
+    z-index: 8;
+    height: 150px;
+    width: 200px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 0;
+    background-color: papayawhip;
+}
+.layer-9{
+    position: absolute;
+    z-index: 9;
+    height: 120px;
+    width: 100px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+}
+.layer-10{
+    position: absolute;
+    z-index: 10;
+    height: 120px;
+    width: 100px;
+    bottom: 0;
+    right: 0;
+    background-color: pink;
+}
+
+/*Bunny*/
+.left-ear--outer{
+    background-color: pink;
+    border-radius: 90%;
+    width: 20px;
+    position: absolute;
+    height: 50px;
+    left: 5px;
+}
+.left-ear--inner{
+    background-color: white;
+    border-radius: 90%;
+    width: 10px;
+    position: absolute;
+    height: 50px;
+    left: 10px;
+    top: 8px;
+}
+.rigth-ear--outer{
+    background-color: pink;
+    border-radius: 90%;
+    width: 20px;
+    position: absolute;
+    height: 50px;
+    right: 5px;
+}
+.rigth-ear--inner{
+    background-color: white;
+    border-radius: 90%;
+    width: 10px;
+    position: absolute;
+    height: 50px;
+    right: 10px;
+    top: 8px;
+}
+.head{
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+    top: 25px;
+}
+.head__eye{
+    background-color: black;
+    border-radius: 50%;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    top: 18px;
+
+    animation-name: blink;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink{
+    0%{
+        height: 6px;
+    }
+    5%{
+        transform: translate(0px, 3px);
+        height: 2px;
+    }
+    10%{
+        transform: translate(0px, 0px);
+        height: 6px;
+    }
+}
+.head__eye--left{
+    left: 30px;
+}
+.head__eye--rigth{
+    right: 30px;
+}
+.zigzag{
+    position: absolute;
+    background-color: lightgreen;
+    top: 0;
+    width: 100%;
+    height: 20px;
+    border-bottom: dashed green;
+}
+
+/*contador*/
+.phone{
+    counter-reset: counter; 
+}
+input:checked{
+    counter-increment: counter;
+}
+.total-count::after{
+   content: counter(counter); 
+}

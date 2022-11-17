@@ -1,0 +1,11 @@
+/*combinador child
+div > p{
+    color: red;
+}
+*/
+
+/*combinador descendiente*/
+div p {
+    color: red;
+}
+
